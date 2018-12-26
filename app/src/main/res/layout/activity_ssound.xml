@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SSound"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/snd_score_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#eb5f5f"
+                android:layout_alignParentLeft="true"
+                android:text="Score "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/snd_score"
+                android:layout_width="wrap_content"
+                android:textColor="#eb5f5f"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/snd_score_text"
+                android:text="0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/snd_countq"
+                android:layout_width="wrap_content"
+                android:textColor="#eb5f5f"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="17dp"
+                android:text="0/20"
+                android:textSize="15dp" />
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/snd_timertext"
+                android:textSize="30sp"
+                android:textColor="#ff22"
+                android:text="00:30"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="20sp"
+            android:scaleType="center"
+            android:src="@drawable/music_icon" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="4dp">
+
+            <Button
+                android:onClick="play"
+                android:id="@+id/btn_play"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/play_icon" />
+
+            <Button
+                android:onClick="pause"
+                android:id="@+id/btn_pause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignBottom="@+id/btn_play"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_toStartOf="@+id/btn_play"
+                android:layout_toLeftOf="@+id/btn_play"
+                android:background="@drawable/pause_icon" />
+
+            <Button
+                android:onClick="stop"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignBottom="@+id/btn_play"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/btn_play"
+                android:background="@drawable/stop_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/snd_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:paddingTop="20sp"
+            android:text="Question"
+            android:textSize="25sp"
+            android:visibility="gone"
+
+            />
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <Button
+            android:onClick="btnone"
+            android:visibility="gone"
+
+            android:id="@+id/snd_btn_one"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_above="@+id/btn_two"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5.0dip"
+            android:baselineAligned="false"
+            android:text="Button" />
+
+        <Button
+            android:onClick="btntwo"
+            android:visibility="gone"
+
+            android:id="@+id/snd_btn_two"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_above="@+id/btn_three"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5.0dip"
+            android:text="Button" />
+
+        <Button
+            android:onClick="btnthree"
+            android:visibility="gone"
+
+            android:id="@+id/snd_btn_three"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_above="@+id/btn_four"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5.0dip"
+            android:text="Button" />
+
+        <Button
+            android:onClick="btnfour"
+            android:visibility="gone"
+
+            android:id="@+id/snd_btn_four"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginBottom="30dp"
+            android:text="Button" />
+        <Button
+            android:onClick="sndHint"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:id="@+id/btn_hint"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/hint_icon"
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

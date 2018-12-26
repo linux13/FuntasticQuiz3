@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Simple">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:padding="4dp"
+    >
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/sm_score_text"
+        android:textColor="#eb5f5f"
+        android:layout_alignParentLeft="true"
+        android:textSize="20sp"
+        android:text="Score "/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/sm_score"
+        android:textColor="#eb5f5f"
+        android:textSize="20sp"
+        android:text="0"
+        android:layout_below="@+id/sm_score_text"
+        />
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:id="@+id/sm_countq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="#eb5f5f"
+        android:layout_marginTop="17dp"
+        android:text="0/20"
+        android:textSize="15dp" />
+    android:textSize="15dp" />
+    <TextView
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sm_timertext"
+        android:textSize="30sp"
+        android:textColor="#ff22"
+        android:text="00:30"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>
+
+    <TextView
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/sm_question"
+        android:textSize="25sp"
+        android:hint="Question"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:paddingTop="20sp"
+        android:layout_centerHorizontal="true"/>
+<LinearLayout
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <Button
+
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:id="@+id/sm_btn_one"
+        android:text="Button"
+        android:layout_marginTop="5.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_two"
+        android:onClick="btnone"
+        />
+
+    <Button
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:id="@+id/sm_btn_two"
+        android:text="Button"
+        android:layout_marginTop="5.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_three"
+        android:onClick="btntwo"
+        />
+
+    <Button
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:id="@+id/sm_btn_three"
+        android:text="Button"
+        android:layout_marginTop="5.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_four"
+        android:onClick="btnthree"
+        />
+
+    <Button
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/sm_btn_four"
+        android:text="Button"
+        android:layout_marginTop="5.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="btnfour"
+        />
+    <Button
+        android:onClick="smHint"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:id="@+id/btn_hint"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/hint_icon"
+        />
+</LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

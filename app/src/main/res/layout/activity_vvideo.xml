@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VVideo"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="4dp"
+            >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/vd_score_text"
+                android:textColor="#eb5f5f"
+                android:layout_alignParentLeft="true"
+                android:textSize="20sp"
+                android:text="Score "/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#eb5f5f"
+                android:id="@+id/vd_score"
+                android:textSize="20sp"
+                android:text="0"
+                android:layout_below="@+id/vd_score_text"
+                />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/vd_countq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#eb5f5f"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="21dp"
+                android:text="0/20"
+                android:textSize="15dp" />
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vd_timertext"
+                android:textSize="30sp"
+                android:textColor="#ff22"
+                android:text="00:30"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <VideoView
+            android:id="@+id/videoView2"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:paddingTop="20sp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/vd_question"
+            android:textSize="25sp"
+            android:text="Question"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:paddingTop="20sp"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            />
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:onClick="btnone"
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:id="@+id/vd_btn_one"
+            android:text="Button"
+            android:layout_marginTop="5.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/btn_two"
+            android:visibility="gone"
+            />
+        <Button
+            android:onClick="btntwo"
+
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:id="@+id/vd_btn_two"
+            android:text="Button"
+            android:layout_marginTop="5.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/btn_three"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:onClick="btnthree"
+
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:id="@+id/vd_btn_three"
+            android:text="Button"
+            android:layout_marginTop="5.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/btn_four"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:onClick="btnfour"
+            android:visibility="gone"
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/vd_btn_four"
+            android:layout_marginTop="5.0dip"
+            android:text="Button"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+        <Button
+            android:onClick="vdHint"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:id="@+id/btn_hint"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/hint_icon"
+            />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

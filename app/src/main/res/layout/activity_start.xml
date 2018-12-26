@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fdfcfcfc"
+    tools:context=".Start">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/banner"/>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:background="@drawable/simple"
+        android:text="Simple"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/btnsimple"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#010101"
+        android:textSize="25sp"
+        android:onClick="simple"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:background="@drawable/hard"
+        android:text="Hard"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/btnhard"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:onClick="hard"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:background="@drawable/extreme"
+        android:text="Extreme"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/btnextreme"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:onClick="extreme"/>
+
+    <TextView
+        android:layout_height="110dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/banner2"
+        android:layout_marginTop="30sp"/>
+
+</LinearLayout>
+
+</LinearLayout>

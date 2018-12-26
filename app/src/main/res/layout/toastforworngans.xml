@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:id="@+id/toastwrong"
+
+    >
+        <ImageView
+            android:src="@drawable/sad"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    <TextView
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+   android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Wrong!!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
